@@ -1,0 +1,105 @@
+.aboveAllStuff {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  border-radius: 20px;
+  width: 400px;
+  margin-top: 70px;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  margin-right: 10px;
+}
+.walletIcon {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.wallet {
+  height: 60px;
+  width: 60px;
+  border: 1px solid rgb(35, 150, 196);
+  border-radius: 10px;
+  padding: 3px;
+}
+.wallet:hover {
+  background-color: rgb(35, 150, 196);
+}
+
+.wallet-open {
+  height: 60px;
+  width: 60px;
+  border: 1px solid rgb(35, 150, 196);
+  border-radius: 10px;
+  padding: 3px;
+  background-color: rgb(35, 150, 196);
+}
+
+.allStuff-wrapper {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #eee;
+  max-height: 475px;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.allStuff-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.allStuff-wrapper::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.allStuff-wrapper::-webkit-scrollbar-thumb {
+  background-color: #1da3fc;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.youCoin-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 70px;
+}
+
+.yourCoin-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nameSim-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nameSim-wrapper img {
+  width: 34px;
+  height: 34px;
+  margin-right: 5px;
+}
+
+.equal {
+  margin: 0 10px;
+  color: #666666;
+  font-size: 30px;
+}
+
+.valueEl {
+  padding-top: 22px;
+}
+.pElement {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}

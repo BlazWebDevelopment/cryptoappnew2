@@ -1,0 +1,75 @@
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f6f6f6;
+  width: 30rem;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+}
+
+.coin-name {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  color: #333;
+}
+
+.coin-value {
+  font-size: 16px;
+  color: #666;
+}
+
+.buy-sell-btn {
+  text-align: right;
+  padding: 10px;
+}
+
+.buy-sell-btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-sell-btn button:hover {
+  background-color: #0056b3;
+}
+.profile-page {
+  padding: 20px;
+}
+
+.profile-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.user-info {
+  margin-bottom: 10rem;
+}
+
+.user-info h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.user-info p {
+  font-size: 16px;
+  color: #666;
+}

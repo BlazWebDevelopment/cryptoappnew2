@@ -1,0 +1,33 @@
+.sidebar-wrapper {
+  justify-content: center;
+  width: 460px;
+  height: 160px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 5rem;
+  background-color: rgba(20, 52, 65, 0.603);
+  position: sticky;
+  top: 10rem;
+}
+.abv-user {
+  align-items: center;
+}
+
+.inside-sidebar-wrapper {
+}
+
+.balance-p {
+  padding-top: 2px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.value-p {
+  font-size: 42px;
+  margin-top: 2px;
+  color: rgb(44, 141, 170);
+  border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.user-p {
+  padding: 7px;
+}

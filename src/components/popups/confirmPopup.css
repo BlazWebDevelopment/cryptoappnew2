@@ -1,0 +1,255 @@
+.bg-clr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: 9999;
+}
+
+.wrapper-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.sell-active {
+  color: rgb(255, 32, 32);
+  border-bottom: 1px solid rgb(78, 78, 78);
+  padding: 5px;
+}
+
+.buy-active {
+  color: rgb(103, 255, 103);
+  border-bottom: 1px solid rgb(78, 78, 78);
+  padding: 5px;
+}
+
+.inside-wrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-column {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+fieldset {
+  border: 1px solid #555555;
+  border-radius: 10px;
+  width: 400px;
+}
+
+legend {
+  margin-left: 40%;
+  padding: 5px;
+}
+
+.left-side-first-column {
+  margin-right: 3rem;
+}
+.left-side-first-column h4 {
+  font-weight: bold;
+  font-size: 26px;
+}
+.left-side-first-column p {
+  font-weight: thin;
+  font-size: 12px;
+}
+
+.img-col {
+  display: flex;
+  align-items: center;
+}
+
+.img-col input {
+  border: none;
+  text-decoration: none;
+  width: 160px;
+  font-size: 26px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.number-of-coins {
+  display: flex;
+  margin-left: 60px;
+}
+
+.number-of-coins button {
+  color: black;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+}
+
+.number-of-coins p {
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.buttons-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+}
+
+.buttons-popup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.errorText {
+  color: red;
+}
+
+.cancel-btn {
+  background-color: #999;
+  margin-right: 10px;
+}
+
+.confirm-btn {
+  background-color: #007bff;
+}
+.successfull p {
+  color: black;
+  font-size: 22px;
+  margin-bottom: 200px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.buttons-popup button:hover {
+  opacity: 0.8;
+}
+
+.spinner2 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid #0096ff;
+  animation: spinner2-bulqg1 0.8s infinite linear alternate,
+    spinner2-oaa3wk 1.6s infinite linear;
+  margin-bottom: 200px;
+}
+
+@keyframes spinner2-bulqg1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes spinner2-oaa3wk {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}

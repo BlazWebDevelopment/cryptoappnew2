@@ -1,0 +1,23 @@
+.cont3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+}
+
+.right-content {
+  flex: 1;
+}
+.convertButton {
+  margin: 20px;
+  padding: 20px;
+  font-size: 28px;
+  border-radius: 15px;
+  background-color: rgb(0, 153, 255);
+  font-weight: bold;
+}
+.convertButton:hover {
+  background-color: rgb(0, 153, 255);
+  background-color: rgb(0, 100, 167);
+}

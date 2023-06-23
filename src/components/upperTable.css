@@ -1,0 +1,28 @@
+.upperTable {
+  width: 450px;
+  margin-left: 22rem;
+  border-bottom: 1px solid rgb(44, 44, 44);
+}
+
+.aboveSmalls {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.closeUpperTable {
+  display: flex;
+  align-items: left;
+}
+
+.upperCont {
+  display: flex;
+  margin: 20px 35px 10px 10px;
+  align-items: center;
+}
+
+.upperCont:hover {
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+}

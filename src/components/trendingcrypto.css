@@ -1,0 +1,97 @@
+.abvCont {
+  margin-top: 10rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 80px;
+  min-width: 1700px;
+}
+
+.container2 {
+  margin-bottom: 10px;
+  width: 100%;
+  margin: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pricesort {
+  cursor: pointer;
+}
+
+td {
+  padding: 30px 20px 30px 0px;
+  text-align: left;
+  border-bottom: 1px solid rgb(49, 49, 49);
+  width: 500px;
+}
+
+th {
+  padding-bottom: 20px;
+}
+
+.inside-th {
+  text-align: left;
+}
+
+.inside-th th span:hover {
+  cursor: pointer;
+  color: rgb(0, 162, 255);
+}
+
+.table-head {
+  background-color: #000000;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  color: #777;
+}
+
+span {
+  font-weight: light;
+}
+.buy-sell-btn:hover {
+  color: rgb(127, 229, 255);
+  font-size: 18px;
+  transition: 0.1s ease-in-out;
+}
+
+.icon-name-con {
+  display: flex;
+}
+
+.negative-percantage {
+  color: rgb(255, 77, 77);
+}
+.positive-percantage {
+  color: rgb(83, 255, 141);
+}
+
+.priceCon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 80px;
+}
+.arrowImg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}

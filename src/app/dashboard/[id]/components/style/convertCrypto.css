@@ -1,0 +1,264 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: 9999;
+}
+
+.coverter-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.title {
+  text-align: center;
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.buttons-popup {
+  margin-top: 50px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 220px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.select-field {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.conversion-icon {
+  font-size: 24px;
+}
+
+.convert-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4994db;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.convert-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.convert-btn:hover {
+  background-color: #3d568b;
+}
+
+.convert-btn:hover::before {
+  top: 0;
+  opacity: 0.1;
+}
+
+.successfully {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.successfully > div {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(76, 182, 49);
+}
+
+.succesfullText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.conversion-details {
+  margin-top: 20px;
+}
+
+.numbers {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.conversion-result {
+  text-align: center;
+  margin-top: 20px;
+}
+.errorText {
+  color: red;
+}
+
+.close-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #db4545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.spinner2 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid #0096ff;
+  animation: spinner2-bulqg1 0.8s infinite linear alternate,
+    spinner2-oaa3wk 1.6s infinite linear;
+  margin-bottom: 200px;
+}
+
+@keyframes spinner2-bulqg1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes spinner2-oaa3wk {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}

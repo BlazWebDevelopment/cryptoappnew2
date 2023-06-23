@@ -1,0 +1,62 @@
+.navbar {
+  position: relative;
+  z-index: 0;
+  height: 90px;
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  color: black;
+}
+
+.inside-nav-bar {
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+.inside-nav-bar :link {
+  margin-right: 30px;
+}
+
+.profileName {
+  font-size: 20px;
+}
+.ulDropdown {
+  margin-top: 10px;
+}
+.eachDropdownEl {
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.signOut {
+  background-color: rgb(255, 24, 24);
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.signOut:hover {
+  font-size: 20px;
+}
+
+.profilePic {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.profilePic:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.menu {
+  border-radius: 10px;
+  z-index: -1;
+  padding: 5px;
+}
