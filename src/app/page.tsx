@@ -18,7 +18,7 @@ export default function Home() {
             >
               <div className="space-y-2">
                 <div className="block text-white group-hover:text-gray-400 transition duration-200">
-                  <button onClick={() => signIn()}>Dashboard →</button>
+                  <button>Dashboard →</button>
                 </div>
               </div>
             </Link>
