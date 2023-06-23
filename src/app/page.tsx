@@ -1,6 +1,4 @@
-"use client";
 import Link from "next/link";
-import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Home() {
   return (
@@ -18,7 +16,7 @@ export default function Home() {
             >
               <div className="space-y-2">
                 <div className="block text-white group-hover:text-gray-400 transition duration-200">
-                  <button>Dashboard →</button>
+                  Dashboard →
                 </div>
               </div>
             </Link>
