@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { IUser } from "@/models/user/User";
+import { IUser } from "../models/user/User";
 import { useSession } from "next-auth/react";
 import { NextResponse } from "next/server";
 import YourCoinList from "@/app/dashboard/[id]/components/YourCoinList";
