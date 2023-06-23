@@ -35,6 +35,7 @@ function ConfirmPopup(props: ConfirmPopupProps): JSX.Element {
     soldCrypto,
     setSoldCrypto,
     sellCalculated,
+    setInvestmentDollars,
     setSellCalculated,
   } = useContext(ConfirmContext);
 
@@ -58,11 +59,13 @@ function ConfirmPopup(props: ConfirmPopupProps): JSX.Element {
   const sellHandler = (): void => {
     setIsBuy(false);
     setIsSell(true);
+    setError(false);
   };
 
   const buyHandler = (): void => {
     setIsBuy(true);
     setIsSell(false);
+    setError(false);
   };
 
   const SellCrypto = user?.yourCoins.filter(
@@ -98,6 +101,8 @@ function ConfirmPopup(props: ConfirmPopupProps): JSX.Element {
         setTimeout(() => {
           setIsLoading(false);
           setIsSuccess(true);
+          setInvestmentDollars(0);
+          setError(false);
         }, 1500);
 
         const newBalance = user?.balance - investmentDollars;
@@ -129,8 +134,9 @@ function ConfirmPopup(props: ConfirmPopupProps): JSX.Element {
         );
       }
     }
+
     if (isSell) {
-      if (soldCrypto > sumValue) {
+      if (soldCrypto > sumValue || +soldCrypto === 0) {
         setError(true);
         return;
       }
