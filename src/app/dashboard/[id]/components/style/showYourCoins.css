@@ -65,12 +65,23 @@ h1 {
   margin-bottom: 20px;
 }
 
+.scrollable-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
 .youCoin-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  height: 70px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .yourCoin-wrapper {
@@ -81,25 +92,45 @@ h1 {
 .nameSim-wrapper {
   display: flex;
   align-items: center;
+  width: 110px;
 }
 
-.nameSim-wrapper img {
-  width: 34px;
-  height: 34px;
-  margin-right: 5px;
+.pElement {
+  margin: 0;
+  font-size: 16px;
 }
 
 .equal {
   margin: 0 10px;
-  color: #666666;
-  font-size: 30px;
+  font-size: 20px;
+  color: #777;
 }
 
 .valueEl {
-  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
 }
-.pElement {
-  font-size: 20px;
+
+.valueEl p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.valueEl p:first-of-type {
   font-weight: bold;
-  color: #333;
+  color: #555;
 }
+
+.valueEl p:last-of-type {
+  color: #999;
+  font-size: 14px;
+}
+
+.cryptoicon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Add additional styles as needed */

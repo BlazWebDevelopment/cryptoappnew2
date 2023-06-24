@@ -48,7 +48,7 @@ function TrendingCrypto({
 
   return (
     <tr className="coin-line">
-      <td>
+      <td className="name-coin">
         <div className="icon-name-con">
           <Image src={image} alt="cryptoicon" height={32} width={32} />
           <div>

@@ -19,7 +19,6 @@ const Pagination: React.FC<PaginationProps> = ({
   for (let i = 1; i <= totalPosts / postsPerPage; i++) {
     pages.push(i);
   }
-
   return (
     <>
       {totalPosts >= 8 && (

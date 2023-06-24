@@ -67,6 +67,10 @@ p {
 span {
   font-weight: light;
 }
+
+.buy-sell-btn {
+  width: 80px;
+}
 .buy-sell-btn:hover {
   color: rgb(127, 229, 255);
   font-size: 18px;
@@ -75,6 +79,7 @@ span {
 
 .icon-name-con {
   display: flex;
+  width: 220px;
 }
 
 .negative-percantage {
