@@ -12,8 +12,8 @@ function Exchanges({ image }: any) {
               src={image}
               alt=""
               className="icon-img"
-              height={32}
-              width={32}
+              height={128}
+              width={128}
             />
           </li>
         </ul>
