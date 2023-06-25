@@ -74,6 +74,7 @@ h1 {
 }
 
 .youCoin-wrapper {
+  width: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +82,7 @@ h1 {
   padding: 10px;
   background-color: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .yourCoin-wrapper {

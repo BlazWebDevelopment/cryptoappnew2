@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext, useState } from "react";
 import Exchanges from "@/components/Exchanges";
 import "../../../components/exchange.css";
@@ -15,6 +15,8 @@ import ShowCoinList from "./components/ShowCoinList";
 import useUser from "@/hooks/useUser";
 import "./components/style/pageStyle.css";
 import ConvertCrypto from "./components/ConvertCrypto";
+import { IUser } from "@/models/user/User";
+import axios from "axios";
 
 interface Exchange {
   id: string;

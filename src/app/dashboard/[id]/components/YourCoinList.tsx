@@ -2,6 +2,7 @@ import React from "react";
 import "./style/showYourCoins.css";
 import Image from "next/image";
 import useCoins from "@/hooks/useCoins";
+import useUser from "@/hooks/useUser";
 
 interface CryptoType {
   image: string;
@@ -26,7 +27,7 @@ function YourCoinList({ image, symbol, value }: CryptoType, props: any) {
           <span className="equal">=</span>
           <div className="valueEl">
             <p className="pElement"> {value}</p>
-            <p>= ${inDollars && inDollars.toLocaleString()}</p>
+            <p>= ${inDollars ? inDollars.toLocaleString() : 0}</p>
           </div>
         </div>
       </div>

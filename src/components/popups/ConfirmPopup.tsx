@@ -5,6 +5,9 @@ import useUser from "@/hooks/useUser";
 import BuyPopup from "./components/BuyPopup";
 import SellPopup from "./components/SellPopup";
 import { v4 as uuidv4 } from "uuid";
+import { useSession } from "next-auth/react";
+import axios from "axios";
+import { IUser } from "@/models/user/User";
 
 interface Crypto {
   image: string;
@@ -104,7 +107,6 @@ function ConfirmPopup(props: ConfirmPopupProps): JSX.Element {
           setInvestmentDollars(0);
           setError(false);
         }, 1500);
-
         const newBalance = user?.balance - investmentDollars;
 
         const newSum = sumValue + calculated;

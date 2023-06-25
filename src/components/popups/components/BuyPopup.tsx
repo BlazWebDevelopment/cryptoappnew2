@@ -3,6 +3,7 @@ import "@/components/popups/confirmPopup.css";
 import dollar from "@/img/dollar.svg";
 import Image from "next/image";
 import { ConfirmContext } from "@/app/context/ConfirmationContext";
+import useUser from "@/hooks/useUser";
 
 function BuyPopup(props: any) {
   const { setInvestmentDollars } = useContext(ConfirmContext);
